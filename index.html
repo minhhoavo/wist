@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title> Home page </title>
+    <meta name="description" content="Home page">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <header class="c-header">
+      <div class="c-header__cover">
+        <div class="c-header__logo">
+          <a href="./index.html">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="./assets/img/header/logoSP.png">
+              <img class="c-header__logoimg" src="./assets/img/header/logo.png" alt="IST 総合建設コンサルタント">
+            </picture>
+          </a>
+        </div>
+        <div class="c-header__nav">
+          <ul class="c-header__menu">
+            <li class="c-header__item"><a class="c-header__link" href="#">会社案内</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link" href="#">事業紹介</a>
+              <ul class="c-header__submenu c-header__submenu--fix">
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">防災・減災業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">ICT・BIM/CIM</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">測量・設計業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">調査業務</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link" href="#">実績紹介</a></li>
+            <li class="c-header__item"><a class="c-header__link" href="#">技術資料</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link" href="#">採用情報</a>
+              <ul class="c-header__submenu">
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">私たちの仕事</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">先輩社員の声</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">募集要項</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="c-header__hamburger">
+          <span class="c-header__line"></span>
+          <span class="c-header__line"></span>
+          <span class="c-header__line"></span>
+          <span class="c-header__linetxt c-header__linetxt--close">メニュー</span>
+          <span class="c-header__linetxt c-header__linetxt--open">閉じる</span>
+        </div>
+        <div class="c-header__navmb">
+          <div class="c-header__infor">
+            <div class="c-header__address">
+              <span class="c-header__adrnum">〒860-0833</span>
+              <span class="c-header__adrtext">熊本市中央区平成3丁目16番13号</span>
+            </div>
+            <div class="c-header__phone">
+              <a class="c-header__num" href="tel:0962855177"><span class="c-header__tel">tel</span>.096-285-5177</a><br>
+              <p class="c-header__fax">fax.096-285-5188</p>
+            </div>
+          </div>
+          <ul class="c-header__menu">
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">お知らせ</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">会社案内</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link c-header__linkmb" href="#">事業紹介</a>
+              <ul class="c-header__submenumb">
+                <li class="c-header__back">戻る</li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">防災・減災業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">ICT・BIM/CIM</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">測量・設計業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">調査業務</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">実績紹介</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">技術資料</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">交通アクセス</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">プライバシーポリシー</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link c-header__linkmb" href="#">採用情報</a>
+              <ul class="c-header__submenumb">
+                <li class="c-header__back">戻る</li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">私たちの仕事</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">先輩社員の声</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">募集要項</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="./contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="home">
+      <section class="home-mainvisual">
+        <div class="home-mainvisual__banner">
+          <div class="home-mainvisual__slider">
+            <div class="home-mainvisual__myslide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/mv/mvSP-img1.jpg">
+                <img class="home-mainvisual__img" src="./assets/img/mv/mv-img1.jpg" alt="protect the future">
+              </picture>
+              <div class="home-mainvisual__inner home-mainvisual__innerlogo">
+                <h1 class="home-mainvisual__title">
+                  <span class="home-mainvisual__text">Protect<br></span>
+                  <span class="home-mainvisual__text">the</span>
+                  <span class="home-mainvisual__text">future</span>
+                </h1>
+                <p class="home-mainvisual__caption">防災技術を駆使し、地域の未来を守る。</p>
+              </div>
+            </div>
+            <div class="home-mainvisual__myslide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/mv/mvSP-img2.jpg">
+                <img class="home-mainvisual__img" src="./assets/img/mv/mv-img2.jpg" alt="protect">
+              </picture>
+              <div class="home-mainvisual__inner">
+                <h2 class="home-mainvisual__title">
+                  <span class="home-mainvisual__text">Protect</span>
+                </h2>
+                <p class="home-mainvisual__caption">生命と財産を守る</p>
+              </div>
+            </div>
+            <div class="home-mainvisual__myslide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/mv/mvSP-img3.jpg">
+                <img class="home-mainvisual__img" src="./assets/img/mv/mv-img3.jpg" alt="connect">
+              </picture>
+              <div class="home-mainvisual__inner">
+                <h2 class="home-mainvisual__title">
+                  <span class="home-mainvisual__text">Connect</span>
+                </h2>
+                <p class="home-mainvisual__caption">地域と人を繋ぐ</p>
+              </div>
+            </div>
+            <div class="home-mainvisual__myslide">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/mv/mvSP-img4.jpg">
+                <img class="home-mainvisual__img" src="./assets/img/mv/mv-img4.jpg" alt="technology">
+              </picture>
+              <div class="home-mainvisual__inner">
+                <h2 class="home-mainvisual__title">
+                  <span class="home-mainvisual__text">Technology</span>
+                </h2>
+                <p class="home-mainvisual__caption">最新技術を生かす</p>
+              </div>
+            </div>
+          </div>
+          <div class="home-mainvisual__bottom l-container l-container--w1240">
+            <a class="home-mainvisual__scroll" href="#intro">
+              <span class="home-mainvisual__dot"></span>
+            </a>
+            <div class="home-mainvisual__label">
+              <div class="home-mainvisual__start">
+                <div class="home-mainvisual__button">
+                  <a class="home-mainvisual__prev" href="#">></a>
+                  <a class="home-mainvisual__next" href="#">></a>
+                </div>
+                <div class="home-mainvisual__labelslider">
+                  <a class="home-mainvisual__txt">
+                    <p class="home-mainvisual__date">2018年11月22日</p>
+                    <p class="home-mainvisual__infor">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
+                  </a>
+                  <a class="home-mainvisual__txt">
+                    <p class="home-mainvisual__date">2019年10月24日</p>
+                    <p class="home-mainvisual__infor">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
+                  </a>
+                  <a class="home-mainvisual__txt">
+                    <p class="home-mainvisual__date">2020年12月12日</p>
+                    <p class="home-mainvisual__infor">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</p>
+                  </a>
+                </div>
+              </div>
+              <div class="home-mainvisual__end">
+                <a class="home-mainvisual__link">お知らせ一覧<span class="home-mainvisual__arrow">></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-intro" id="intro">
+        <div class="home-intro__top">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/icon/logoSP-icon.svg">
+            <img class="home__icon" src="./assets/img/icon/logo-icon.svg" alt="IST 総合建設コンサルタント">
+          </picture>
+          <h2 class="c-title c-title--intro">事業紹介</h2>
+          <p class="c-desc c-desc--intro">アイエステーは、たゆまない技術向上により、地域防災事業に携わるとともに<br class="u-break">地域の安全・安心を確保できるインフラ整備に貢献します。</p>
+        </div>
+        <div class="home-intro__content">
+          <div class="home-intro__product l-container">
+            <div class="home-intro__item">
+              <a class="home-intro__frame" href="#">
+                <div class="home-intro__image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-img1.jpg">
+                    <img class="home-intro__img" src="./assets/img/intro/intro-img1.jpg" alt="防災・減災業務">
+                  </picture>
+                </div>
+                <div class="home-intro__box">
+                  <div class="home-intro__label  home-intro__label--color1">
+                    <div class="home-intro__icon">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-icon1.svg">
+                        <img class="home-intro__iconimg home-intro__iconimg--tsunami" src="./assets/img/intro/intro-icon1.svg" alt="防災・減災業務">
+                      </picture>
+                    </div>
+                    <h3 class="home-intro__text home-intro__text--tsunami">防災・減災業務</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-intro__item">
+              <a class="home-intro__frame" href="#">
+                <div class="home-intro__image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-img2.jpg">
+                    <img class="home-intro__img" src="./assets/img/intro/intro-img2.jpg" alt="ICT・BIM/CIM">
+                  </picture>
+                </div>
+                <div class="home-intro__box">
+                  <div class="home-intro__label  home-intro__label--color2">
+                    <div class="home-intro__icon">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-icon2.svg">
+                        <img class="home-intro__iconimg home-intro__iconimg--drone" src="./assets/img/intro/intro-icon2.svg" alt="ICT・BIM/CIM">
+                      </picture>
+                    </div>
+                    <h3 class="home-intro__text home-intro__text--drone">ICT・BIM/CIM</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-intro__item">
+              <a class="home-intro__frame" href="#">
+                <div class="home-intro__image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-img3.jpg">
+                    <img class="home-intro__img" src="./assets/img/intro/intro-img3.jpg" alt="測量・設計業務">
+                  </picture>
+                </div>
+                <div class="home-intro__box">
+                  <div class="home-intro__label  home-intro__label--color3">
+                    <div class="home-intro__icon">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-icon3.svg">
+                        <img class="home-intro__iconimg home-intro__iconimg--camera" src="./assets/img/intro/intro-icon3.svg" alt="測量・設計業務">
+                      </picture>
+                    </div>
+                    <h3 class="home-intro__text home-intro__text--camera">測量・設計業務</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-intro__item">
+              <a class="home-intro__frame" href="#">
+                <div class="home-intro__image">
+                  <picture>
+                    <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-img4.jpg">
+                    <img class="home-intro__img" src="./assets/img/intro/intro-img4.jpg" alt="調査業務">
+                  </picture>
+                </div>
+                <div class="home-intro__box">
+                  <div class="home-intro__label  home-intro__label--color4">
+                    <div class="home-intro__icon">
+                      <picture>
+                        <source media="(max-width: 767px)" srcset="./assets/img/intro/introSP-icon4.svg">
+                        <img class="home-intro__iconimg home-intro__iconimg--drill" src="./assets/img/intro/intro-icon4.svg" alt="調査業務">
+                      </picture>
+                    </div>
+                    <h3 class="home-intro__text home-intro__text--drill">調査業務</h3>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-product">
+        <div class="home-product__wrap">
+          <div class="home-product__content l-container">
+            <div class="home-product__left">
+              <picture>
+                <source media="(max-width: 767px)" srcset="./assets/img/product/flycamSP-img.png">
+                <img class="home-product__img" src="./assets/img/product/flycam-img.png" alt="レーザースキャナ搭載のドローン*で安全かつ効率的に測量が可能。">
+              </picture>
+              <span class="home-product__laser c-fade">
+                <span class="home-product__line"></span>
+              </span>
+            </div>
+            <div class="home-product__right">
+              <h2 class="c-title c-title--product">レーザースキャナ搭載のドローン<span class="u-yellow">*</span><br class="u-break">で安全かつ効率的に測量が可能。</h2>
+              <h3 class="c-desc c-desc--product">アイエステーでは、ドローン搭載型の測量用レーザースキャナ搭載のドローンを導入しました。これにより、従来の写真測量で必須だった対空標識を置くことなく、安全かつ効率的に測量することが可能となりました。またレーザーは植生下にも届くため、写真測量では不可能だった植生下のグランドデータを取得できます。災害時の地形測量や施工管理における活躍が期待できます。</h3>
+              <p class="home-product__caption"><span class="u-yellow u-yellow--sp">＊</span>アミューズワンセルフ社製：ドローン搭載用レーザースキャナシステム「TDOT（ティードット）」</p>
+            </div>
+          </div>
+        </div>
+        <a class="home-product__more" href="#">
+          <span class="home-product__link">詳細情報 <span class="home__arrow">></span></span>
+        </a>
+      </section>
+      <section class="home-plan">
+        <div class="home-plan__bgr">
+          <div class="home-plan__top">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./assets/img/icon/logoSP-icon.svg">
+              <img class="home__icon" src="./assets/img/icon/logo-icon.svg" alt="IST 総合建設コンサルタント">
+            </picture>
+            <h2 class="c-title c-title--plan">実績紹介</h2>
+            <p class="c-desc c-desc--plan">『地域の人たちが安全に安心して暮らせるように、<br>そして豊かに快適に暮らせるように』、そんな想いを込めて仕事をしています。</p>
+          </div>
+          <div class="home-plan__content l-container">
+            <div class="home-plan__list home-plan__list--pc">
+              <div class="home-plan__item">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img1.jpg" alt="No title">
+                    <span class="home-plan__label home-plan__label--color1">ICT・BIM/CIM</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">No title</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-plan__item">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img2.jpg" alt="十籠地すべり対策事業">
+                    <span class="home-plan__label home-plan__label--color2">防災・減災業務</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">十籠地すべり対策事業</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-plan__item">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img3.jpg" alt="水ヶ浦地区災害関連緊急地すべり対策事業">
+                    <span class="home-plan__label home-plan__label--color2">防災・減災業務</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">水ヶ浦地区災害関連緊急地すべり対策事業</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-plan__item">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img4.jpg" alt="大切畑地区災害関連緊急地すべり対策事業">
+                    <span class="home-plan__label home-plan__label--color2">防災・減災業務</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">大切畑地区災害関連緊急地すべり対策事業</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="home-plan__prev"></div>
+            <div class="home-plan__list home-plan__list--tab home-plan__slider">
+              <div class="home-plan__item home-plan__myslides">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img1.jpg" alt="No title">
+                    <span class="home-plan__label home-plan__label--color1">ICT・BIM/CIM</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">No title</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-plan__item home-plan__myslides">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img2.jpg" alt="十籠地すべり対策事業">
+                    <span class="home-plan__label home-plan__label--color2">防災・減災業務</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">十籠地すべり対策事業</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-plan__item home-plan__myslides">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img3.jpg" alt="水ヶ浦地区災害関連緊急地すべり対策事業">
+                    <span class="home-plan__label home-plan__label--color2">防災・減災業務</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">水ヶ浦地区災害関連緊急地すべり対策事業</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-plan__item home-plan__myslides">
+                <a href="#">
+                  <div class="home-plan__image">
+                    <img class="home-plan__img" src="./assets/img/plan/plan-img4.jpg" alt="大切畑地区災害関連緊急地すべり対策事業">
+                    <span class="home-plan__label home-plan__label--color2">防災・減災業務</span>
+                  </div>
+                  <div class="home-plan__banner">
+                    <h3 class="home-plan__title">大切畑地区災害関連緊急地すべり対策事業</h3>
+                    <span class="home-plan__arrow">></span>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="home-plan__next"></div>
+          </div>
+        </div>
+        <a class="home-product__more home-plan__more" href="#">
+          <span class="home-product__link">実績紹介一覧 <span class="home__arrow">></span></span>
+        </a>
+      </section>
+      <section class="home-company">
+        <div class="home-company__wrap">
+          <div class="home-company__content">
+            <div class="home-company__left">
+              <a class="home-company__link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./assets/img/company/companySP-img1.jpg">
+                  <img class="home-company__img" src="./assets/img/company/company-img1.jpg" alt="会社案内">
+                </picture>
+                <div class="home-company__inner">
+                  <h2 class="home-company__title">会社案内</h2>
+                  <h3 class="home-company__caption">これまでの防災技術と新分野のICTなどを拡充し、<br class="u-break">地元地域に密着した総合建設コンサルタントを目指します。<br>
+                    <span class="home-company__arrow">></span>
+                  </h3>
+                </div>
+              </a>
+            </div>
+            <div class="home-company__right">
+              <a class="home-company__link" href="#">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="./assets/img/company/companySP-img2.jpg">
+                  <img class="home-company__img" src="./assets/img/company/company-img2.jpg" alt="採用情報">
+                </picture>
+                <div class="home-company__inner">
+                  <h2 class="home-company__title">採用情報</h2>
+                  <h3 class="home-company__caption">私たちと共に専門知識や技術を高めながら<br class="u-break">地域の未来を守る人材を募集しています。<br>
+                    <span class="home-company__arrow">></span>
+                  </h3>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="home-notice">
+        <div class="home-notice__top">
+          <picture>
+            <source media="(max-width: 767px)" srcset="./assets/img/icon/logoSP-icon.svg">
+            <img class="home__icon" src="./assets/img/icon/logo-icon.svg" alt="IST 総合建設コンサルタント">
+          </picture>
+          <h2 class="c-title c-title--notice">お知らせ</h2>
+        </div>
+        <div class="home-notice__content">
+          <div class="home-notice__list">
+            <a class="home-notice__item" href="#">
+              <dl class="home-notice__dl">
+                <dt class="home-notice__dt">2018年11月22日</dt>
+                <dd class="home-notice__dd">先進建設・防災・減災技術フェアin熊本にドローン等について出展しました。</dd>
+              </dl>
+            </a>
+            <a class="home-notice__item" href="#">
+              <dl class="home-notice__dl">
+                <dt class="home-notice__dt">2018年11月20日</dt>
+                <dd class="home-notice__dd">ホームページをリニューアルしました</dd>
+              </dl>
+            </a>
+            <a class="home-notice__item" href="#">
+              <dl class="home-notice__dl">
+                <dt class="home-notice__dt">2018年07月04日</dt>
+                <dd class="home-notice__dd">綿田地区の復興を願って寄付をしました。</dd>
+              </dl>
+            </a>
+            <a class="home-notice__item" href="#">
+              <dl class="home-notice__dl">
+                <dt class="home-notice__dt">2017年10月12日</dt>
+                <dd class="home-notice__dd">福岡支店が移転しました。</dd>
+              </dl>
+            </a>
+            <a class="home-notice__item" href="#">
+              <dl class="home-notice__dl">
+                <dt class="home-notice__dt">2017年09月01日</dt>
+                <dd class="home-notice__dd">ドローンレーザスキャナを導入しました</dd>
+              </dl>
+            </a>
+          </div>
+        </div>
+        <a class="home-product__more home-product__more--color home-notice__more" href="#">
+          <span class="home-product__link home-product__link--notice">お知らせ一覧 <span class="u-color home__arrow">></span></span>
+        </a>
+      </section>
+      <div class="c-backtotop">
+        <div class="c-backtotop__btn">
+          <p class="c-backtotop__text">
+            <span class="c-backtotop__icon">^</span>
+            <span class="c-backtotop__txt">TOP</span>
+          </p>
+        </div>
+        <div class="c-backtotop__image">
+          <img class="c-backtotop__img" src="./assets/img/footer/pagetop.png" alt="back to top">
+        </div>
+      </div>
+    </main>
+    <footer class="c-footer">
+      <div class="c-footer__content">
+        <div class="c-footer__box">
+          <h2 class="c-footer__boxttl">
+            <span class="c-footer__boxtxt">Protect<br></span>
+            <span class="c-footer__boxtxt">the</span>
+            <span class="c-footer__boxtxt">future</span>
+          </h2>
+          <p class="c-footer__desc">防災技術を駆使し、地域の未来を守る。</p>
+        </div>
+        <div class="c-footer__logo">
+          <a href="./index.html">
+            <img class="c-footer__img" src="./assets/img/footer/flogo-img.png" alt="IST 総合建設コンサルタント">
+          </a>
+        </div>
+        <div class="c-footer__top">
+          <p class="c-footer__name">
+            <span class="c-footer__nametxt">総合建設コンサルタント</span>
+            <span class="c-footer__nametxt">株式会社アイエステー（IST）</span>
+          </p>
+          <p class="c-footer__addr">〒860-0833　熊本市中央区平成3丁目16番13号</p>
+        </div>
+        <div class="c-footer__middle">
+          <a class="c-footer__phone" href="tel:0962855177">
+            <span class="c-footer__phonetxt">tel.</span>
+            <span class="c-footer__phonenum">096-285-5177</span>
+          </a>
+          <p class="c-footer__fax">fax.096-285-5188</p>
+        </div>
+        <div class="c-footer__bottom">
+          <div class="c-footer__link">
+            <a class="c-footer__linktxt" href="#">交通アクセス<span class="c-footer__arrow">></span></a>
+            <a class="c-footer__linktxt" href="#">プライバシーポリシー<span class="c-footer__arrow">></span></a>
+          </div>
+          <div class="c-footer__address">
+            <address>Copyright © IST CO., LTD. All Rights Reserved.</address>
+          </div>
+        </div>
+      </div>
+      <div class="c-footer__bgrl">
+      </div>
+      <div class="c-footer__bgrr">
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+
+</html>

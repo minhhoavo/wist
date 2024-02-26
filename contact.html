@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <title> Contact page </title>
+    <meta name="description" content="Contact page">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+
+  <body>
+    <header class="c-header">
+      <div class="c-header__cover">
+        <div class="c-header__logo">
+          <a href="./index.html">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="./assets/img/header/logoSP.png">
+              <img class="c-header__logoimg" src="./assets/img/header/logo.png" alt="IST 総合建設コンサルタント">
+            </picture>
+          </a>
+        </div>
+        <div class="c-header__nav">
+          <ul class="c-header__menu">
+            <li class="c-header__item"><a class="c-header__link" href="#">会社案内</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link" href="#">事業紹介</a>
+              <ul class="c-header__submenu c-header__submenu--fix">
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">防災・減災業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">ICT・BIM/CIM</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">測量・設計業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">調査業務</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link" href="#">実績紹介</a></li>
+            <li class="c-header__item"><a class="c-header__link" href="#">技術資料</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link" href="#">採用情報</a>
+              <ul class="c-header__submenu">
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">私たちの仕事</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">先輩社員の声</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitem"><a class="c-header__sublink" href="#">募集要項</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link" href="/contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+        <div class="c-header__hamburger">
+          <span class="c-header__line"></span>
+          <span class="c-header__line"></span>
+          <span class="c-header__line"></span>
+          <span class="c-header__linetxt c-header__linetxt--close">メニュー</span>
+          <span class="c-header__linetxt c-header__linetxt--open">閉じる</span>
+        </div>
+        <div class="c-header__navmb">
+          <div class="c-header__infor">
+            <div class="c-header__address">
+              <span class="c-header__adrnum">〒860-0833</span>
+              <span class="c-header__adrtext">熊本市中央区平成3丁目16番13号</span>
+            </div>
+            <div class="c-header__phone">
+              <a class="c-header__num" href="tel:0962855177"><span class="c-header__tel">tel</span>.096-285-5177</a><br>
+              <p class="c-header__fax">fax.096-285-5188</p>
+            </div>
+          </div>
+          <ul class="c-header__menu">
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">お知らせ</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">会社案内</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link c-header__linkmb" href="#">事業紹介</a>
+              <ul class="c-header__submenumb">
+                <li class="c-header__back">戻る</li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">防災・減災業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">ICT・BIM/CIM</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">測量・設計業務</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">調査業務</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">実績紹介</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">技術資料</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">交通アクセス</a></li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="#">プライバシーポリシー</a></li>
+            <li class="c-header__item">
+              <a class="c-header__link c-header__linkmb" href="#">採用情報</a>
+              <ul class="c-header__submenumb">
+                <li class="c-header__back">戻る</li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">私たちの仕事</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">先輩社員の声</a><i class="fa-solid fa-angle-right"></i></li>
+                <li class="c-header__subitemmb"><a class="c-header__sublinkmb" href="#">募集要項</a><i class="fa-solid fa-angle-right"></i></li>
+              </ul>
+            </li>
+            <li class="c-header__item"><a class="c-header__link c-header__linkmb" href="/contact.html">お問い合わせ</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main class="contact">
+      <section class="contact-banner">
+        <img class="contact-banner__img" src="./assets/img/contact/contact-bgr.jpg" alt="お問い合わせ">
+        <h1 class="contact-banner__title">お問い合わせ</h1>
+      </section>
+      <section class="contact-form">
+        <div class="contact-form__cover">
+          <div class="contact-form__top">
+            <picture>
+              <source media="(max-width: 767px)" srcset="./assets/img/icon/logoSP-icon.svg">
+              <img class="home__icon" src="./assets/img/icon/logo-icon.svg" alt="IST 総合建設コンサルタント">
+            </picture>
+            <h2 class="c-title c-title--contact">お問い合わせフォーム</h2>
+            <p class="c-desc c-desc--contact">株式会社アイエステーへのお問い合わせ専用フォームです。弊社へのご質問・ご相談などありましたらどうぞお気軽にご連絡ください。後日メールまたはお電話にて返信いたします。</p>
+          </div>
+          <div class="contact-form__main">
+            <form class="contact-form__content" id="contactform">
+              <div class="contact-form__tr">
+                <div class="contact-form__th">
+                  <label for="company" class="contact-form__label">
+                    <span class="contact-form__note">任意</span> 法人名 </label>
+                </div>
+                <div class="contact-form__td">
+                  <input type="text" name="company" id="company" class="contact-form__input" placeholder="株式会社アイエステー">
+                </div>
+              </div>
+              <div class="contact-form__tr">
+                <div class="contact-form__th">
+                  <label for="name" class="contact-form__label">
+                    <span class="contact-form__note u-green">必須</span> お名前 </label>
+                </div>
+                <div class="contact-form__td">
+                  <input type="text" name="name" id="name" class="contact-form__input" placeholder="熊本 太郎">
+                  <label class="contact-form__error">このフィールドを空白のままにしないでください</label>
+                </div>
+              </div>
+              <div class="contact-form__tr">
+                <div class="contact-form__th">
+                  <label for="email" class="contact-form__label">
+                    <span class="contact-form__note u-green">必須</span> メールアドレス </label>
+                </div>
+                <div class="contact-form__td">
+                  <input type="email" name="email" id="email" class="contact-form__input" placeholder="example@gmail.com">
+                  <label class="contact-form__error">このフィールドを空白のままにしないでください</label>
+                </div>
+              </div>
+              <div class="contact-form__tr">
+                <div class="contact-form__th">
+                  <label for="phone" class="contact-form__label">
+                    <span class="contact-form__note u-green">必須</span> 電話番号 </label>
+                </div>
+                <div class="contact-form__td">
+                  <input type="text" name="phone" id="phone" class="contact-form__input" placeholder="00-0000-0000">
+                  <label class="contact-form__error">このフィールドを空白のままにしないでください</label>
+                </div>
+              </div>
+              <div class="contact-form__tr contact-form__post">
+                <div class="contact-form__th">
+                  <label for="post" class="contact-form__label">
+                    <span class="contact-form__note">任意</span> ご住所 </label>
+                </div>
+                <div class="contact-form__td">
+                  <div class="contact-form__tdlist">
+                    <div class="contact-form__tdtop">
+                      <span class="contact-form__sign">〒</span>
+                      <input type="text" name="post" id="post" class="contact-form__input" placeholder="00-0000">
+                      <select name="address" id="address" class="contact-form__select contact-form__arrow">
+                        <option class="contact-form__option" value disabled selected hidden>--都道府県--</option>
+                        <option class="contact-form__option" value="1">--北海道--</option>
+                        <option class="contact-form__option" value="2">--青森県--</option>
+                        <option class="contact-form__option" value="3">--岩手県--</option>
+                        <option class="contact-form__option" value="4">--宮城県--</option>
+                        <option class="contact-form__option" value="5">--秋田県--</option>
+                        <option class="contact-form__option" value="6">--山形県--</option>
+                      </select>
+                    </div>
+                    <input type="text" name="building" id="building" class="contact-form__input contact-form__building" placeholder="ビル・マンションなど">
+                    <input type="text" name="city" id="city" class="contact-form__input" placeholder="市町村区番地">
+                  </div>
+                </div>
+              </div>
+              <div class="contact-form__tr contact-form__detail">
+                <div class="contact-form__th">
+                  <label for="detail" class="contact-form__label">
+                    <span class="contact-form__note u-green">必須</span> お問い合わせ<br class="u-break">内容 </label>
+                </div>
+                <div class="contact-form__td">
+                  <textarea name="detail" id="detail" class="contact-form__input" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+                  <label class="contact-form__error">このフィールドを空白のままにしないでください</label>
+                </div>
+              </div>
+              <button id="submitbtn" class="contact-form__btn" type="submit">確認する ></button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <div class="c-backtotop">
+        <div class="c-backtotop__btn">
+          <p class="c-backtotop__text">
+            <span class="c-backtotop__icon">^</span>
+            <span class="c-backtotop__txt">TOP</span>
+          </p>
+        </div>
+        <div class="c-backtotop__image"></div>
+        <img class="c-backtotop__img" src="./assets/img/footer/pagetop.png" alt="back to top">
+      </div>
+    </main>
+    <footer class="c-footer">
+      <div class="c-footer__content">
+        <div class="c-footer__box">
+          <h2 class="c-footer__boxttl">
+            <span class="c-footer__boxtxt">Protect<br></span>
+            <span class="c-footer__boxtxt">the</span>
+            <span class="c-footer__boxtxt">future</span>
+          </h2>
+          <p class="c-footer__desc">防災技術を駆使し、地域の未来を守る。</p>
+        </div>
+        <div class="c-footer__logo">
+          <a href="./index.html">
+            <img class="c-footer__img" src="./assets/img/footer/flogo-img.png" alt="IST 総合建設コンサルタント">
+          </a>
+        </div>
+        <div class="c-footer__top">
+          <p class="c-footer__name">
+            <span class="c-footer__nametxt">総合建設コンサルタント</span>
+            <span class="c-footer__nametxt">株式会社アイエステー（IST）</span>
+          </p>
+          <p class="c-footer__addr">〒860-0833　熊本市中央区平成3丁目16番13号</p>
+        </div>
+        <div class="c-footer__middle">
+          <a class="c-footer__phone" href="tel:0962855177">
+            <span class="c-footer__phonetxt">tel.</span>
+            <span class="c-footer__phonenum">096-285-5177</span>
+          </a>
+          <p class="c-footer__fax">fax.096-285-5188</p>
+        </div>
+        <div class="c-footer__bottom">
+          <div class="c-footer__link">
+            <a class="c-footer__linktxt" href="#">交通アクセス<span class="c-footer__arrow">></span></a>
+            <a class="c-footer__linktxt" href="#">プライバシーポリシー<span class="c-footer__arrow">></span></a>
+          </div>
+          <div class="c-footer__address">
+            <address>Copyright © IST CO., LTD. All Rights Reserved.</address>
+          </div>
+        </div>
+      </div>
+      <div class="c-footer__bgrl">
+      </div>
+      <div class="c-footer__bgrr">
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+
+</html>
